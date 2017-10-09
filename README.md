@@ -31,6 +31,8 @@ Browse http://127.0.0.1:6080/
 
 Try gazebo
 
+Please refer to http://products.rt-net.jp/micromouse/archives/3262 for detail. (Japanese article)
+
 ```
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src/
