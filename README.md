@@ -13,16 +13,42 @@ This imaeg is absed on [fcwu/docker-ubuntu-vnc-desktop](https://github.com/fcwu/
 Quick Start
 -------------------------
 
+Build docker image
+
+```
+$ git clone https://github.com/ikeyasu/docker-ubuntu-vnc-ros.git
+$ cd docker-ubuntu-vnc-ros
+$ docker build --rm -t ikeyasu/ubuntu-vnc-ros kinetic
+```
+
 Run the docker image and open port `6080`
 
 ```
-docker run -it --rm -p 6080:80 dorowu/ubuntu-desktop-lxde-vnc
+docker run -it --rm -p 6080:80 ikeyasu/ubuntu--vnc-ros:kinetic
 ```
 
 Browse http://127.0.0.1:6080/
 
-<img src="https://raw.github.com/fcwu/docker-ubuntu-vnc-desktop/master/screenshots/lxde.png?v1" width=700/>
+Try gazebo
 
+```
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ros-simulation/gazebo_ros_demos
+$ cd ../
+$ catkin_make
+$ roslaunch rrbot_description rrbot_rviz.launch
+```
+
+You can see
+
+<img src="screenshots/rviz.png" width=700/>
+
+```
+$ roslaunch rrbot_gazebo rrbot_world.launch
+```
+
+<img src="screenshots/gazebo.gif" width=700/>
 
 Connect with VNC Viewer and protect by VNC Password
 ------------------
