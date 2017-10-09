@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-MAINTAINER Doro Wu <fcwu.tw@gmail.com>
+FROM osrf/ros:kinetic-desktop-full
+MAINTAINER keyasu <ikeyasu@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
