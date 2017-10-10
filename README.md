@@ -7,7 +7,7 @@ docker-ubuntu-vnc-ros
 -->
 
 Docker image to provide HTML5 VNC interface to access Ubuntu 16.04 LXDE desktop environment and ROS full desktop.
-This imaeg is absed on [fcwu/docker-ubuntu-vnc-desktop](https://github.com/fcwu/docker-ubuntu-vnc-desktop) and
+This imaeg is based on [fcwu/docker-ubuntu-vnc-desktop](https://github.com/fcwu/docker-ubuntu-vnc-desktop) and
 [osrf/ros:kinetic-desktop-full](https://hub.docker.com/r/osrf/ros).
 
 Quick Start
