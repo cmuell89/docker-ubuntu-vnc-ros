@@ -18,13 +18,13 @@ Build docker image
 ```
 $ git clone https://github.com/ikeyasu/docker-ubuntu-vnc-ros.git
 $ cd docker-ubuntu-vnc-ros
-$ docker build --rm -t ikeyasu/ubuntu-vnc-ros kinetic
+$ docker build -t ikeyasu/ubuntu-vnc-ros:kinetic .
 ```
 
 Run the docker image and open port `6080`
 
 ```
-docker run -it --rm -p 6080:80 ikeyasu/ubuntu--vnc-ros:kinetic
+docker run -it --rm -p 6080:80 ikeyasu/ubuntu-vnc-ros:kinetic
 ```
 
 Browse http://127.0.0.1:6080/
